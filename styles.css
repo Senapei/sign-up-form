@@ -1,5 +1,6 @@
 :root {
   --logo-font: "Lobster", cursive;
+  --label-font: "Lexend Peta", sans-serif;
 }
 
 * {
@@ -19,7 +20,21 @@ img {
 
 p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+label {
+  font-family: var(--label-font);
+  display: inline-block;
+  font-size: 10px;
+}
+
+input {
+  margin-bottom: 30px;
 }
 
 .main {
@@ -28,10 +43,16 @@ p {
 }
 
 .right-side {
-  margin: 210px 0 0 50px;
-
+  margin: 0 40px 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: start;
-  max-width: 750px;
+  max-width: 900px;
+}
+
+.intro {
+  max-width: 620px;
 }
 
 .intro p {
@@ -41,3 +62,65 @@ p {
 .intro p:last-child {
   margin-bottom: 100px;
 }
+
+.form-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button button {
+  border: 3px solid rgb(88, 196, 135);
+  color: black;
+  padding: 15px 18px;
+  text-align: center;
+  font-size: 16px;
+  margin: 5px 2px 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background: none;
+  max-width: 156px;
+}
+
+.button button:hover {
+  background-color: rgb(88, 196, 135);
+}
+
+.button p {
+  font-weight: normal;
+  font-size: 16.5px;
+}
+
+.button span {
+  color: rgb(88, 196, 135);
+  font-weight: bold;
+}
+
+/*
+todo:
+
+
+
+
+- figure out the image problem how it swallows all the content when shrunk
+- add button
+- add logo
+- add sand as background
+
+
+
+DONE:
+- try and sort the confirm password on to one line or have label go on top 
+- better font for the writing
+- add column instead of side by side
+*/

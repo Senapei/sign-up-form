@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Lobster&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -20,15 +20,51 @@
       <div class="right-side">
         <div class="intro">
           <p>
-            This is not a real online service! Welcome to our exquisite holiday
-            haven, where dreams come to life and adventures unfold! Book your
-            ticket to paradise today and let the countdown to your dream holiday
-            begin!
+            Welcome to our exquisite holiday haven, where dreams come to life
+            and adventures unfold! Book your ticket to paradise today and let
+            the countdown to your dream holiday begin!
           </p>
-          <p>Discover. Escape. Indulge.</p>
+          <p><em>Discover. Escape. Indulge.</em></p>
         </div>
 
         <p>Let's do this!</p>
+        <form class="form-main" action="./index.html" method="get">
+          <div class="inputs">
+            <div class="form-row">
+              <label for="user-first-name">FIRST NAME</label>
+              <input type="text" id="user-first-name" name="firstName" />
+            </div>
+            <div class="form-row">
+              <label for="user-last-name">LAST NAME</label>
+              <input type="text" id="user-last-name" name="lastName" />
+            </div>
+            <div class="form-row">
+              <label for="user-email">EMAIL</label>
+              <input type="email" id="user-email" name="email" />
+            </div>
+            <div class="form-row">
+              <label for="user-phone-number">PHONE NUMBER</label>
+              <input type="tel" id="user-phone-number" name="phoneNumber" />
+            </div>
+            <div class="form-row">
+              <label for="user-password">PASSWORD</label>
+              <input type="password" id="user-password" name="password" />
+            </div>
+            <div class="form-row">
+              <label for="user-confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="user-confirm-password"
+                name="confirmPassword"
+              />
+            </div>
+          </div>
+
+          <div class="form-row button">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <span>Log in</span></p>
+          </div>
+        </form>
       </div>
     </div>
   </body>
