@@ -113,6 +113,7 @@ input::placeholder {
 .intro {
   max-width: 700px;
   font-family: var(--intro-font);
+  flex-shrink: 0;
 }
 
 .intro p {
@@ -175,23 +176,60 @@ input::placeholder {
 .password-margin {
   margin-bottom: 6px;
 }
-/*
-todo:
 
+@media (max-width: 1113px) {
+  .main {
+    display: block;
+  }
 
+  .left-side {
+    background-color: black;
+    margin-bottom: 40px;
+  }
 
+  .form-row {
+    margin-bottom: 20px;
+  }
 
+  .logo {
+    justify-content: center;
+  }
 
+  .beach {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+  }
+}
 
+@media (max-width: 545px) {
+  .right-side {
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    text-align: center;
+  }
 
+  .form-row {
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 100%;
+  }
 
+  .inputs,
+  .form-main {
+    justify-content: center;
+    align-items: center;
+  }
 
+  .logo h1 {
+    left: 60px;
+  }
 
-DONE:
-- try and sort the confirm password on to one line or have label go on top 
-- better font for the writing
-- add column instead of side by side
-- add button
-- add logo
-
-*/
+  .logo-img {
+    right: 10px;
+  }
+}
