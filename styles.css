@@ -27,6 +27,28 @@ label {
 
 input {
   margin-bottom: 30px;
+  height: 27px;
+  padding: 0 7px;
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(88, 196, 135);
+}
+
+input:valid {
+  outline: none;
+  border: 2px solid rgb(88, 196, 135);
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+input::placeholder {
+  font-size: 10px;
 }
 
 .left-side {
@@ -121,12 +143,13 @@ input {
   padding: 15px 25px;
   text-align: center;
   font-size: 16px;
-  margin: 10px 2px 20px;
+  margin: 10px 0px 20px;
   transition-duration: 0.4s;
   cursor: pointer;
   background: none;
-  max-width: 170px;
+  max-width: 174px;
   border-radius: 6px;
+  font-weight: bold;
 }
 
 .button button:hover {
@@ -153,10 +176,9 @@ todo:
 
 
 
-- figure out the image problem how it swallows all the content when shrunk
 
 
-- add sand as background
+
 
 
 
