@@ -75,7 +75,6 @@
                 placeholder="Johnathan-Johnson@mailing.com"
                 required
               />
-              <span class="invalid-span"></span>
             </div>
             <div class="form-row">
               <label for="user-phone-number">PHONE NUMBER</label>
@@ -91,6 +90,7 @@
             <div class="form-row">
               <label for="user-password">PASSWORD</label>
               <input
+                class="pwd"
                 type="password"
                 id="user-password"
                 name="password"
@@ -98,11 +98,12 @@
                 maxlength="30"
                 required
               />
+              <span class="invalid-span"></span>
             </div>
             <div class="form-row confirm-pwd">
               <label for="user-confirm-password">CONFIRM PASSWORD</label>
               <input
-                class="confirm-pwd"
+                class="cnfrm-pwd"
                 type="password"
                 id="user-confirm-password"
                 name="confirmPassword"
@@ -114,11 +115,14 @@
           </div>
 
           <div class="form-row button">
-            <button type="submit">Create Account</button>
+            <button class="createAccountBtn" type="submit">
+              Create Account
+            </button>
             <p>Already have an account? <span>Log in</span></p>
           </div>
         </form>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

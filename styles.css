@@ -36,6 +36,7 @@ input {
 input:focus {
   outline: none;
   border: 2px solid rgb(88, 196, 135);
+  box-shadow: 2px 2px 3px rgb(88, 196, 135);
 }
 
 input:valid {
@@ -45,6 +46,7 @@ input:valid {
 
 input:focus:invalid {
   border: 2px solid red;
+  box-shadow: 2px 2px 3px red;
 }
 
 input::placeholder {
@@ -166,9 +168,12 @@ input::placeholder {
   font-weight: bold;
 }
 
-.confirm-pwd:invalid::after {
-  margin-bottom: 0;
-  content: "efsefsef";
+.invalid-span {
+  color: red;
+}
+
+.password-margin {
+  margin-bottom: 6px;
 }
 /*
 todo:
