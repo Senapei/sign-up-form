@@ -1,6 +1,7 @@
 :root {
   --logo-font: "Lobster", cursive;
   --label-font: "Lexend Peta", sans-serif;
+  --intro-font: "Merriweather Sans", sans-serif;
 }
 
 * {
@@ -46,7 +47,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .logo h1 {
@@ -77,7 +78,7 @@ input {
 }
 
 .right-side {
-  margin: 0 40px 0 25px;
+  margin: 0 0px 0 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +87,8 @@ input {
 }
 
 .intro {
-  max-width: 620px;
+  max-width: 700px;
+  font-family: var(--intro-font);
 }
 
 .intro p {
@@ -141,6 +143,10 @@ input {
   font-weight: bold;
 }
 
+.confirm-pwd:invalid::after {
+  margin-bottom: 0;
+  content: "efsefsef";
+}
 /*
 todo:
 
